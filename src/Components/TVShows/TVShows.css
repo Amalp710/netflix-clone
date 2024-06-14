@@ -1,0 +1,49 @@
+.grid-container {
+    
+    color: #fff;
+    margin-top: 70px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .grid-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  h2{
+    margin-top: 30px;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .trailer {
+    position: relative;
+  }
+  
+  .back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .back-arrow img {
+    width: 30px;
+    height: 30px;
+  }
+  

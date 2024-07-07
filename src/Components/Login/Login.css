@@ -2,25 +2,21 @@
   height: 100vh;
   color: aliceblue;
   background-image: linear-gradient(#0000007e, #0000007e), url(/public/background_banner.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  padding: 20px 8%;
 }
 
 .login-logo {
   width: 150px;
-  margin-bottom: 20px;
 }
 
 .login-form {
+  
   width: 100%;
   max-width: 450px;
   background: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
-  padding: 60px 40px;
-  margin: 0 20px;
-  box-sizing: border-box;
+  padding: 60px;
+  margin:43px 20px 1px 340px;
 }
 
 .login-form h1 {
@@ -38,7 +34,7 @@
   border: 0;
   outline: 0;
   border-radius: 4px;
-  padding: 16px 20px;
+  padding: 16px 1px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -46,6 +42,7 @@
 .login-form input::placeholder {
   font-size: 16px;
   font-weight: 500;
+  padding-left: 20px;
 }
 
 .login-form button {
@@ -106,18 +103,16 @@
 }
 
 /* Media Query for responsiveness */
-@media (max-width: 500px) {
+@media (max-width: 300px) {
   .login {
-      padding: 15px;
-      justify-content: center;
+    padding: 15px 5%;
   }
   .login-form {
-      padding: 20px;
-      margin: 0;
-      width: 100%;
-      box-sizing: border-box;
+    padding: 20px;
+    margin-top: 30px;
   }
   .login-form h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 }
+

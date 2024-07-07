@@ -1,3 +1,5 @@
+/* Login.css */
+
 .login {
   height: 100vh;
   color: aliceblue;
@@ -26,15 +28,15 @@
 }
 
 .login-form input {
-  width: 100%;
-  height: 35px;
+  width: 91%;
+  height: 50px;
   background: #333;
   color: white;
   margin: 12px 0;
   border: 0;
   outline: 0;
   border-radius: 4px;
-  padding: 16px 1px;
+  padding: 16px 20px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -42,7 +44,6 @@
 .login-form input::placeholder {
   font-size: 16px;
   font-weight: 500;
-  padding-left: 20px;
 }
 
 .login-form button {
@@ -103,16 +104,24 @@
 }
 
 /* Media Query for responsiveness */
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .login {
-    padding: 15px 5%;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   .login-form {
-    padding: 20px;
-    margin-top: 30px;
+      padding: 20px;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .login-form input {
+    width: 80%;
   }
   .login-form h1 {
-    font-size: 24px;
+      font-size: 18px;
   }
 }
-
